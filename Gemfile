@@ -9,15 +9,7 @@ gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "bcrypt", "~> 3.1.7"
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem "therubyracer", platforms: :ruby
-
-# Use Unicorn as the app server
-# gem "unicorn"
-
-# Use Capistrano for deployment
-# gem "capistrano-rails", group: :development
+gem "therubyracer", platforms: :ruby
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
@@ -42,7 +34,7 @@ gem "therubyracer", platform: :ruby
 group :development do
   gem "better_errors"
   gem "html2haml"
-  gem "hub", :require=>nil
+  gem "hub", require: nil
   gem "quiet_assets"
   gem "rails_apps_pages"
   gem "rails_apps_testing"
